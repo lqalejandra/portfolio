@@ -2,6 +2,7 @@ import React from 'react';
 import '../style/index.css';
 import type { MenuProps } from 'antd';
 import { Layout, Menu, theme } from 'antd';
+import { Outlet } from 'react-router-dom';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -72,14 +73,19 @@ const LeLayout: React.FC = () => {
       </Sider>
       <Layout style={{ marginLeft: 200 }}>
         <Header style={{ padding: 0, background: colorBgContainer }} />
-        <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
+
+        
+        <Content style={{ margin: '0px 0px 0', overflow: 'initial' }}>
+        
           <div
             style={{
-              padding: 24,
+              padding: 0,
               textAlign: 'left',
               background: 'red'
             }}
+
           >
+            <Outlet/>
             {/* <p>long content</p>
             {
               // indicates very long content
@@ -91,6 +97,7 @@ const LeLayout: React.FC = () => {
               ))
             } */}
           </div>
+          
         </Content>
         <Footer style={{ textAlign: 'center' }}>Alejandra ©2023 </Footer>
       </Layout>

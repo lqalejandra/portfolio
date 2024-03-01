@@ -4,12 +4,13 @@ import LeCarousel from "../components/LeCarousel";
 export function FrontPage(){
     
     
-    return <div>
+    return (<div>
+    
        
-
+<LeCarousel></LeCarousel>
         
-            <LeCarousel/>
-            <div>
+            
+            {/* <div>
             <h1>about Aléjandra</h1>
             </div>
 
@@ -25,8 +26,10 @@ export function FrontPage(){
         <p>In my free time, I enjoy making stickers, drawing and coding, where I am able to feel most at peace and express myself to the fullest.</p>
 
 Thank you for visiting my portfolio site that I got to build with React.js. I am excited for the opportunity to demonstrate my potential and enthusiasm for design, and to begin my professional journey in this industry.</p>
-    </div>
-    </div>
+    </div> */}
     
+    
+    </div>
+    )
 }
 export default FrontPage;
